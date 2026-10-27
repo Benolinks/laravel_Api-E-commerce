@@ -8,8 +8,8 @@ const Screen = () => {
     style={{background: "linear-gradient(to left ,#fee685 ,#fee685  , #f3e8ff"}}
     >
       <Header />
-      {/* <SlideShow /> */}
       <Home/>
+      <SlideShow />
       
     </div>
   );
