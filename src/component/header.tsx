@@ -27,7 +27,7 @@ const Header = () => {
 
     return ()=>{
       window.removeEventListener("resize", handleWidth);
-      console.log("removed")
+      
     }
   },[]);
 

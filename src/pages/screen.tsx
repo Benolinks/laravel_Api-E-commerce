@@ -1,5 +1,5 @@
 import Header from '../component/header'
-import SlideShow from '../component/slideShow'
+
 import Home from './home';
 
 const Screen = () => {
@@ -9,7 +9,7 @@ const Screen = () => {
     >
       <Header />
       <Home/>
-      <SlideShow />
+
       
     </div>
   );
