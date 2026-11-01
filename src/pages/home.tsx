@@ -18,7 +18,9 @@ const Home = () => {
     <main>
       <div className="mx-auto flex min-h-[calc(100vh-80px)] w-full max-w-7xl flex-col items-center justify-center gap-10 px-6 py-12 sm:px-10 md:flex-row md:gap-12 lg:px-16">
       <div className="max-w-xl text-center md:text-left">
-        <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-[#a855f7]">
+        <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-[#a855f7]"
+         id="Home"
+        >
           Freshly made, always delicious
         </p>
         <h1 className="text-4xl font-extrabold
@@ -63,9 +65,11 @@ const Home = () => {
       </div>
           {/*  image div  */}
       <div className="relative mx-auto w-full max-w-xl">
-        <div className="absolute -inset-3 rounded-4xl bg-[#fee685]/70 sm:-inset-5" />
+        <div className="absolute -inset-3 rounded-4xl
+         bg-[#fee685]/70 sm:-inset-5" />
         <img
-          className="relative aspect-4/3 w-full rounded-full object-cover shadow-xl"
+          className="relative aspect-4/3 w-full rounded-full
+           object-cover shadow-xl"
           src={one}
           alt="Freshly prepared fast food"
         />
@@ -96,8 +100,8 @@ const Home = () => {
         <h3 className=" align-middle 
       text-center py-8 px-4  
        text-lg font-bold
-       text-[#1e1b4b] border bg-[#b7971a]
-        border-[#1e1b4b]  rounded-lg">Hot Deals</h3>
+       text-[#f3e8ff] border bg-[#b7971a]
+          rounded-lg">Hot Deals</h3>
         </div>
         
 
@@ -115,8 +119,8 @@ const Home = () => {
         <h3 className=" align-middle 
       text-center py-8 px-4  
        text-lg font-bold
-       text-[#1e1b4b] border bg-[#b7971a]
-        border-[#1e1b4b]  rounded-lg">fast delivery</h3>
+       text-[#f3e8ff] border bg-[#b7971a]
+          rounded-lg">fast delivery</h3>
         </div>
 
 
@@ -126,21 +130,26 @@ const Home = () => {
 
 </div>
 
-      {/*  */}
+      {/*   for food slide show slideshow */}
       <SlideShow />
 
 
         {/* what we offer */}
         <div className="flex flex-col items-center align-middle justify-center pt-6">
-          <h4 className="text-xl font-medium text-[#1e1b4b]">What We Offer </h4>
-          <h4 className="text-2xl font-bold">Browse by <span className="text-[#b7971a]">Category </span></h4>
+          <h4 className="text-3xl font-medium text-[#1e1b4b] border-b-4 border-[#b7971a]"
+             
+          >What We Offer </h4>
+          <div className=" text-5xl  font-bold gap-2 
+          flex flex-row m-auto text-center text-[#1e1b4b] "> Browse by 
+          <span className="text-[#b7971a]"> Category</span> </div>
 
-          <p className=" items-center text-center mx-auto mt-6 max-w-lg text-base leading-7 text-gray-500 sm:text-xl xl:text-xl md:mx-0">From sizzling burgers to exotic world cuisines - find your favourite in our menu
+          <p className=" items-center text-center xl:max-w-80 mx-auto mt-6 max-w-lg text-base leading-7 text-gray-500 sm:text-xl xl:text-xl md:mx-0 w-75 md:w-85">From sizzling burgers to exotic world cuisines - find your favourite in our menu
 
           </p>
 
       {/*  for food, items and colection  */}
-          <div className="flex flex-row gap-6 flex-wrap items-center p-3 m-3 justify-center">
+          <div className="flex flex-row gap-9
+           flex-wrap items-center p-3 m-3 justify-center">
             {
               CategoryImage.map((category)=>{
                 return(
@@ -154,7 +163,9 @@ const Home = () => {
                       bg-[#f3e8ff]
                       rounded-2xl
                       border-2
-                      w-35
+                      w-70
+                      md:w-25
+                      xl:w-35
                       items-center
                       justify-center
                       text-center
@@ -164,14 +175,17 @@ const Home = () => {
                         ${isActive === category.id
                           ? "border-[#b7971a]"
                           : "border-transparent"}`}
-
-                      
                       >
                     <img
                     className="rounded-full
                      object-cover 
                      aspect-square 
-                     w-25
+                     w-65
+                     md:w-25
+                     xl:w-35
+                     lg:w-35
+                  
+                  
                      m-auto"
                      
                      

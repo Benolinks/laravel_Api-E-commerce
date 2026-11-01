@@ -1,4 +1,5 @@
 import Header from '../component/header'
+import About from './about';
 
 import Home from './home';
 
@@ -9,6 +10,7 @@ const Screen = () => {
     >
       <Header />
       <Home/>
+      <About/>
 
       
     </div>

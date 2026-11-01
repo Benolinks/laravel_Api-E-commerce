@@ -64,8 +64,8 @@ const Header = () => {
 
         `} 
         >
-          <Link
-            to="/"
+          <a
+            href="#Home"
 
             className={`hover:bg-[#a855f7]  
             p-2 transition-all duration-500 
@@ -78,67 +78,67 @@ const Header = () => {
           
             
               
-            onClick={()=> setIsFocused('/')}
+            onClick={()=> setIsFocused('#Home')}
           >
             
             Home
-          </Link>
-          <Link
-            to="/About"
+          </a>
+          <a
+            href="#About"
            className={`hover:bg-[#a855f7]  
             p-2 transition-all duration-500 
             rounded-lg hover:text-[#f3e8ff]
              ${isFocused 
               ? "border-amber-500 hover:border-b-4" : ""}`}
-            onClick={()=> setIsFocused('/About')}
+            onClick={()=> setIsFocused('#About')}
           >
             About
-          </Link>
-          <Link
-            to="/Menu"
+          </a>
+          <a
+            href="#Menu"
             className={`hover:bg-[#a855f7]  
             p-2 transition-all duration-500 
             rounded-lg hover:text-[#f3e8ff]
              ${isFocused 
               ? "border-amber-500 hover:border-b-4" 
               : ""}`}
-            onClick={()=> setIsFocused('/Menu')}
+            onClick={()=> setIsFocused('#Menu')}
           >
             Menu
-          </Link>
-          <Link
-            to="/Chef"
+          </a>
+          <a
+            href="#Chef"
            className={`hover:bg-[#a855f7]  
             p-2 transition-all duration-500 
             rounded-lg hover:text-[#f3e8ff]
              ${isFocused 
               ? "border-amber-500 hover:border-b-4" : ""}`}
-            onClick={()=> setIsFocused('/Chef')}
+            onClick={()=> setIsFocused('#Chef')}
           >
             Chef
-          </Link>
-          <Link
-            to="Reservation"
+          </a>
+          <a
+            href="#Reservation"
            className={`hover:bg-[#a855f7]  
             p-2 transition-all duration-500 
             rounded-lg hover:text-[#f3e8ff]
              ${isFocused 
               ? "border-amber-500 hover:border-b-4" : ""}`}
-            onClick={()=> setIsFocused('/Reservation')}
+            onClick={()=> setIsFocused('#Reservation')}
           >
             Reservation
-          </Link>
-          <Link
-            to="Review"
+          </a>
+          <a
+            href="#Review"
            className={`hover:bg-[#a855f7]  
             p-2 transition-all duration-500 
             rounded-lg hover:text-[#f3e8ff]
              ${isFocused 
               ? "border-amber-500 hover:border-b-4" : ""}`}
-            onClick={()=> setIsFocused('/Review')}
+            onClick={()=> setIsFocused('#Review')}
           >
             Reviews
-          </Link>
+          </a>
         </div>
 
         {/*Order now   */}
