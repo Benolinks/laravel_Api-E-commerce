@@ -139,9 +139,10 @@ const Home = () => {
           <h4 className="text-3xl font-medium text-[#1e1b4b] border-b-4 border-[#b7971a]"
              
           >What We Offer </h4>
-          <div className=" text-5xl  font-bold gap-2 
-          flex flex-row m-auto text-center text-[#1e1b4b] "> Browse by 
-          <span className="text-[#b7971a]"> Category</span> </div>
+          <h1 className="text-4xl font-extrabold text-[#1e1b4b]">
+          Browse by  
+           <strong className="text-[#b7971a]"> Category</strong> 
+        </h1>
 
           <p className=" items-center text-center xl:max-w-80 mx-auto mt-6 max-w-lg text-base leading-7 text-gray-500 sm:text-xl xl:text-xl md:mx-0 w-75 md:w-85">From sizzling burgers to exotic world cuisines - find your favourite in our menu
 
