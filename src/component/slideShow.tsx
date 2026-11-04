@@ -81,7 +81,7 @@ const SlideShow = () => {
                   key={available.id}
                   className="whitespace-nowrap rounded-xl 
                   bg-[#fee685] px-2 py-2 font-semibold
-                   text-[#1e1b4b] shadow-md"
+                   text-[#1e1b4b] shadow-md  hover:bg-[#f3e8ff] hover:text-[#b7971a] transition-all duration-300"
                 >
                   {available.name}
                 </div>

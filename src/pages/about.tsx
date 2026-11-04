@@ -1,6 +1,8 @@
 import { FaAward, FaLeaf } from "react-icons/fa";
 import about from "../../sarab/img/about1.jpg";
 import { TbTruckDelivery } from "react-icons/tb";
+import { IoBookOutline } from "react-icons/io5";
+import ReusableText from "../component/reusableText";
 
 const About = () => {
   return (
@@ -45,18 +47,9 @@ const About = () => {
      
          "
         >
-          <h2
-            className="text-2xl font-bold text-[#1e1b4b] 
-            border-b-4 border-[#b7971a] pb-2 text-center"
-            id="About"
-          >
-            Our Story
-          </h2>
-          <h1 className="text-4xl font-extrabold text-[#1e1b4b]">
-            We Invite You to Visit Our{" "}
-            <strong className="text-[#b7971a]">
-              Food Restaurant</strong>
-          </h1>
+         <ReusableText name="Our Story " description="We Invite You to Visit Our " strong="Food Restaurant" />
+
+
           <p className="text-lg text-[#1e1b4b] mt-4">
             Founded in 2012, Sarab began as a small corner 
             joint with a big
@@ -75,7 +68,9 @@ const About = () => {
             items-center text-center align-middle "
             >
               <FaLeaf
-                className="text-center align-middle mt-4"
+                className="text-center 
+                 shadow-4xl bg-[#f3e8ff]
+                align-middle mt-4 "
                 style={{ color: "#b7971a", fontSize: "1.5rem" }}
               />
               <div>
@@ -101,7 +96,9 @@ const About = () => {
             items-center text-center align-middle "
             >
               <FaAward
-                className="text-center align-middle mt-4"
+                className="text-center
+                 shadow-2xl bg-[#f3e8ff] 
+                align-middle mt-4"
                 style={{ color: "#b7971a", fontSize: "1.5rem" }}
               />
               <div>
@@ -114,7 +111,7 @@ const About = () => {
               </div>
             </div>
             <p>
-              r signature recipes have won national 
+              Our signature recipes have won national 
               culinary awards 5 years in a
               row.
             </p>
@@ -127,7 +124,8 @@ const About = () => {
             items-center text-center align-middle "
             >
               <TbTruckDelivery
-                className="text-center align-middle mt-4"
+                className="text-center shadow-2xl bg-[#f3e8ff] 
+                align-middle mt-4"
                 style={{ color: "#b7971a", fontSize: "1.5rem" }}
               />
               <div>
@@ -145,7 +143,23 @@ const About = () => {
               minutes, guaranteed.
             </p>
           </div>
+          {/* full menu button  */}
+          <div className="flex flex-row gap-2 items-center text-center align-middle mt-4
+           text-[#f3e8ff] bg-[#b7971a] p-2 rounded-2xl shadow-2xl hover:bg-[#f3e8ff]
+            hover:text-[#b7971a] transition-all duration-300">
+            <IoBookOutline />
+            <button>View Full Menu</button>
+          </div>
         </div>
+        
+
+
+
+
+
+
+
+        {/* overal cloing div */}
       </div>
     </main>
   );

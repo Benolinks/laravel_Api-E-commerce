@@ -2,6 +2,7 @@ import Header from '../component/header'
 import About from './about';
 
 import Home from './home';
+import Menu from './menu';
 
 const Screen = () => {
   return (
@@ -11,6 +12,7 @@ const Screen = () => {
       <Header />
       <Home/>
       <About/>
+      <Menu/>
 
       
     </div>
