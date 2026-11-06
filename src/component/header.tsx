@@ -11,7 +11,7 @@ const Header = () => {
 
   
 
-  const desktop = "xl:p-2 xl:flex xl:static xl:flex-row xl:gap-9 md:flex lg:flex lg:static md:static md:flex-row xl:flex-row md:gap-5 xl:gap-4";
+  const desktop = " xl:p-2 xl:flex xl:static xl:flex-row xl:gap-9 md:flex lg:flex lg:static md:static md:flex-row xl:flex-row md:gap-5 xl:gap-4";
 
 
   useEffect(()=>{
@@ -32,11 +32,12 @@ const Header = () => {
   },[]);
 
   return (
-    <div>
+    <div className="sticky top-0 z-50">
       {/* div for all  header  */}
       <div
         className="shadow-md bg-gray-100 
-      px-4 py-2 flex items-center justify-between "
+      px-4 py-2 flex items-center 
+      justify-between "
       >
         <div className="flex-col ps-3  xl:ms-10 cursor-pointer ">
           <Link

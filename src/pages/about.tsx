@@ -27,12 +27,16 @@ const About = () => {
             src={about}
             alt="About Us"
             className="rounded-2xl shadow-2xl
+             m-auto
+             
        
    
     
         
          border-2
         "
+        loading="lazy"
+                  decoding="async"
           />
         </div>
 
@@ -46,8 +50,9 @@ const About = () => {
         xl:w-[50%] 
      
          "
+        
         >
-         <ReusableText name="Our Story " description="We Invite You to Visit Our " strong="Food Restaurant" />
+         <ReusableText name="Our Story " description="We Invite You to Visit Our " strong="Food Restaurant"  id="About" />
 
 
           <p className="text-lg text-[#1e1b4b] mt-4">
@@ -145,7 +150,7 @@ const About = () => {
           </div>
           {/* full menu button  */}
           <div className="flex flex-row gap-2 items-center text-center align-middle mt-4
-           text-[#f3e8ff] bg-[#b7971a] p-2 rounded-2xl shadow-2xl hover:bg-[#f3e8ff]
+           text-[#f3e8ff] bg-[#b7971a] p-2 rounded-2xl shadow-2xl hover:bg-[#f3e8ff] font-bold
             hover:text-[#b7971a] transition-all duration-300">
             <IoBookOutline />
             <button>View Full Menu</button>

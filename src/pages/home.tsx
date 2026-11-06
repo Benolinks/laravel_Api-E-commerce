@@ -78,7 +78,7 @@ const Home = () => {
           />
           <img
             className="relative aspect-4/3
-             w-full rounded-full
+             w-full rounded-4xl
            object-cover shadow-xl"
             src={one}
             alt="Freshly prepared fast food"
@@ -87,7 +87,7 @@ const Home = () => {
 
         <div>
           <style>{`
-       @keyframes ben {
+       @keyframes hotDeals {
          0%, 100% { transform: translateY(0); }
          50% { transform: translateY(20px); }
        }
@@ -99,12 +99,13 @@ const Home = () => {
         </div>
         <div
           style={{
-            animationName: "ben",
+            animationName: "hotDeals",
             animationDuration: "3s",
             animationTimingFunction: "ease-in-out",
             animationIterationCount: "infinite",
           }}
-          className=" object-cover absolute right-2 hidden xl:block  "
+          className=" object-cover absolute 
+          right-12 hidden xl:block  "
         >
           <h3
             className=" align-middle 
@@ -146,7 +147,7 @@ const Home = () => {
       {/* what we offer */}
       <div className="flex flex-col items-center align-middle justify-center pt-6">
         
-        <ReusableText name="What We Offer" description="Browse by" strong="Category" />
+        <ReusableText name="What We Offer" description="Browse by" strong="Category "  />
 
         <p className=" items-center text-center xl:max-w-80 mx-auto mt-6 max-w-lg text-base leading-7 text-gray-500 sm:text-xl xl:text-xl md:mx-0 w-75 md:w-85">
           From sizzling burgers to exotic world cuisines - find your favourite
@@ -197,6 +198,8 @@ const Home = () => {
                      m-auto"
                   src={category.image}
                   alt={`Category ${category.id}`}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <p
                   className="text-center

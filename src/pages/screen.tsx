@@ -8,6 +8,7 @@ const Screen = () => {
   return (
     <div 
     style={{background: "linear-gradient(to left ,#fee685 ,#fee685  , #f3e8ff"}}
+    
     >
       <Header />
       <Home/>
